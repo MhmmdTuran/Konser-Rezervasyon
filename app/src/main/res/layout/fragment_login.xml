@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:foregroundGravity="center_vertical"
+    tools:context=".FragmentLogin">
+
+    <LinearLayout
+        android:id="@+id/fragmentLoginPage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/txtLoginUsername"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:fontFamily="sans-serif-light"
+            android:hint="Kullanıcı Adı"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/txtLoginPassword"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:fontFamily="sans-serif-light"
+            android:hint="Şifre"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="245dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="55dp"
+            android:background="@drawable/smooth_corner_green"
+            android:fontFamily="sans-serif-light"
+            android:text="GİRİŞ"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+</FrameLayout>

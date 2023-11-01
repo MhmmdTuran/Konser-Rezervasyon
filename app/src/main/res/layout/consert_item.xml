@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:background="@color/soft_white">
+
+    <ImageView
+        android:id="@+id/consert_item_imgConsertPicture"
+        android:layout_width="120dp"
+        android:layout_height="150dp" />
+
+    <LinearLayout
+        style="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/consert_item_imgArtistName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sanatçı Adı"
+            android:textColor="@color/black"
+            android:textSize="17sp"></TextView>
+
+        <TextView
+            android:id="@+id/consert_item_imgConsertDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Konser Tarihi"
+            android:textColor="@color/black"
+            android:textSize="17sp"></TextView>
+
+        <TextView
+            android:id="@+id/consert_item_imgConsertPlace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Konser Yeri"
+            android:textColor="@color/black"
+            android:textSize="17sp"></TextView>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnUserInfoPage"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/btn_userinfo_icons"
+        android:contentDescription="button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBuyTicketPage"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAddConsertPage"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="208dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/btn_addconsert_icons"
+        android:contentDescription="button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.848"
+        app:layout_constraintStart_toEndOf="@+id/btnBuyTicketPage"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnBuyTicketPage"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="208dp"
+        android:background="@drawable/btn_tickets_icons"
+        android:contentDescription="button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnExitPage"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/btn_logout_icons"
+        android:contentDescription="button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.433"
+        app:layout_constraintStart_toEndOf="@+id/btnUserInfoPage"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddConsertPage"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/txtBuyTicketPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Konser Bileti Al"
+        app:layout_constraintEnd_toEndOf="@+id/btnBuyTicketPage"
+        app:layout_constraintStart_toStartOf="@+id/btnBuyTicketPage"
+        app:layout_constraintTop_toBottomOf="@+id/btnBuyTicketPage" />
+
+    <TextView
+        android:id="@+id/txtAddConsertPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Konser Ekle"
+        app:layout_constraintEnd_toEndOf="@+id/btnAddConsertPage"
+        app:layout_constraintStart_toStartOf="@+id/btnAddConsertPage"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddConsertPage" />
+
+    <TextView
+        android:id="@+id/txtUserInfoPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kullanıcı Bilgileri"
+        app:layout_constraintEnd_toEndOf="@+id/btnUserInfoPage"
+        app:layout_constraintStart_toStartOf="@+id/btnUserInfoPage"
+        app:layout_constraintTop_toBottomOf="@+id/btnUserInfoPage" />
+
+    <TextView
+        android:id="@+id/txtLogOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Çıkış Yap"
+        app:layout_constraintEnd_toEndOf="@+id/btnExitPage"
+        app:layout_constraintStart_toStartOf="@+id/btnExitPage"
+        app:layout_constraintTop_toBottomOf="@+id/btnExitPage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

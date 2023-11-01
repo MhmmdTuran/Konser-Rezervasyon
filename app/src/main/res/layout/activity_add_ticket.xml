@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".AddTicket">
+
+    <ImageView
+        android:id="@+id/imgAddPicture"
+        android:layout_width="240dp"
+        android:layout_height="300dp"
+        android:contentDescription="picture"
+        android:onClick="choosePicture"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/pick_icon" />
+
+    <EditText
+        android:id="@+id/txtArtistName"
+        android:layout_width="300dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Sanatçı Adı"
+        android:inputType="textPersonName" />
+
+    <AutoCompleteTextView
+        android:id="@+id/txtConsertPlace"
+        android:layout_width="300dp"
+        android:layout_height="58dp"
+        android:hint="Konser Yeri"
+        android:completionThreshold="1"/>
+
+    <EditText
+        android:id="@+id/txtConsertDate"
+        android:layout_width="300dp"
+        android:layout_height="58dp"
+        android:ems="10"
+        android:hint="Konser Tarihi"
+        android:inputType="date" />
+
+    <Button
+        android:id="@+id/btnAddConsert"
+        android:layout_width="245dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/smooth_corner_green"
+        android:onClick="saveConsert"
+        android:text="EKLE"
+        android:textColor="@color/white" />
+</LinearLayout>

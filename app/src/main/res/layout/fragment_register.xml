@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/txtRegiste"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentRegister">
+
+    <LinearLayout
+        android:id="@+id/fragmentRegisterPage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/txtRegisterUsername"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:fontFamily="sans-serif-light"
+            android:hint="Kullanıcı Adı"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/txtRegisterPassword"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:fontFamily="sans-serif-light"
+            android:hint="Şifre"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/txtRegisterEmail"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:fontFamily="sans-serif-light"
+            android:hint="E-Mail"
+            android:inputType="textEmailAddress" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="245dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="55dp"
+            android:background="@drawable/smooth_corner_green"
+            android:fontFamily="sans-serif-light"
+            android:text="KAYIT OL"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+</FrameLayout>
